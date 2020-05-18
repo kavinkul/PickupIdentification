@@ -1178,7 +1178,8 @@ public class PickupIdentificationScript : MonoBehaviour
 				yield return "sendtochaterror The key is not yet pressable. Command was ignored";
 				yield break;
 			}
-			
+			yield return "solve";
+			yield return "strike";
 				Enter.OnInteract();
 		}
 		
